@@ -22,9 +22,10 @@ dbname = ""
 ---
 ### Still to do
 
+#### ~~Add CI for checking code defects~~ - Done
 #### Add secrets management
 #### Add DB parameter group
-#### Add CI for checking code defects
+#### Put code into a terraform module
 
 
 
