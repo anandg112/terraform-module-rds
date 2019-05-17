@@ -2,8 +2,8 @@
 
 if [[ $TRAVIS_BRANCH == 'master' ]]
 then
-    terraform fmt
-    terraform init
-    terraform validate
-    terraform plan
+    ./terraform-linux fmt
+    ./terraform-linux init
+    ./terraform-linux validate
+    ./terraform-linux plan
 fi
