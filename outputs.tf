@@ -1,15 +1,15 @@
 output "endpoint" {
-  value = "${aws_db_instance.anand-db.endpoint}"
+  value = "${module.rds-db.endpoint}"
 }
 
-output "instance-id" {
-  value = "${aws_db_instance.anand-db.id}"
+output "id" {
+  value = "${module.rds-db.instance-id}"
 }
 
-output "rds-arn" {
-  value = "${aws_db_instance.anand-db.arn}"
+output "arn" {
+  value = "${module.rds-db.rds-arn}"
 }
 
-output "rds-hostname" {
-  value = "${aws_db_instance.anand-db.address}"
+output "hostname" {
+  value = "${module.rds-db.rds-hostname}"
 }

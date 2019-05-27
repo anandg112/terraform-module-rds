@@ -10,3 +10,6 @@
 
 # plan output
 out.terraform
+
+#ENV vars
+.env

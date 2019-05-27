@@ -4,8 +4,6 @@ This project sets up  Postgres 9.6 on AWS and supports encryption at rest.
 
 ### Setup
 #### Set these variables in your ```terraform.tfvars``` file
-access_key = ""\
-secret_key = ""\
 user = ""\
 owner = ""\
 environment = ""\
@@ -23,9 +21,11 @@ dbname = ""
 ### Still to do
 
 #### ~~Add CI for checking code defects~~ - Done
+#### ~~Put code into a terraform module~~ - Done
 #### Add secrets management
 #### Add DB parameter group
-#### Put code into a terraform module
+#### Use Terraform 0.12 new remote state management
+
 
 
 
