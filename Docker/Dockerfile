@@ -16,6 +16,6 @@ COPY /rds /rds
 
 RUN terraform init -backend=false -input=false
 
-# ENTRYPOINT []
+ENTRYPOINT []
 
-# CMD "./kickstart.sh"
+CMD ./kickstart.sh
