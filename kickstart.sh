@@ -6,14 +6,12 @@ terraform init -backend=true \
 -backend-config=region\=us-east-1 \
 -input=false \
 
-NOW=$date
-
 if [ $ACTION == "deploy" ]
 then
-    echo "Deployment started at $NOW" 
+    echo "Deployment started at $date"
     terraform apply -auto-approve
 elif [ $ACTION == "destroy" ]
 then
-    echo "Teardown started at $NOW"
+    echo "Teardown started at $date"
     terraform destroy -auto-approve
 fi
