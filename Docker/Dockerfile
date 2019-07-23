@@ -14,6 +14,8 @@ WORKDIR /rds
 
 COPY /rds /rds
 
+COPY kickstart.sh kickstart.sh
+
 RUN terraform init -backend=false -input=false
 
 ENTRYPOINT []

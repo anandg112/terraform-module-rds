@@ -13,3 +13,5 @@ out.terraform
 
 #ENV vars
 .env
+.envrc
+
