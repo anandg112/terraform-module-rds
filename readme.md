@@ -8,7 +8,8 @@ This project sets up Postgres 9.6 on AWS and supports encryption at rest.
 
 #### Set these variables in your `.envrc` file
 
-```TF_VAR_user=anand
+```bash
+TF_VAR_user=anand
 TF_VAR_owner=anand
 TF_VAR_environment=dev
 TF_VAR_dbname=postgres
@@ -21,13 +22,21 @@ ACTION=deploy
 
 ### Building the docker image
 
-`docker build -f ./provisioner/Dockerfile -t rds-provisioner .`
+```bash
+docker build -f ./provisioner/Dockerfile -t rds-provisioner .
+```
 
 ### Running the provisioner for Postgres on AWS
 
-`docker run --env-file .envrc rds-provisioner`
+```bash
+docker run --env-file .envrc rds-provisioner
+```
 
 ---
+
+### Release
+
+This project uses GitHub Actions to release new versions of the terraform module through semantic-release NPM package. GitHub Actions also performs a `terraform plan` `terraform fmt` to ensure module is tested and formatted properly.
 
 ### Still to do
 
