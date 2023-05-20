@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "${var.region}"
+  region = var.region
 }
 
 terraform {
@@ -19,10 +19,10 @@ resource "aws_db_instance" "anand-db" {
   engine              = "postgres"
   engine_version      = "9.6.12"
   instance_class      = "db.t2.medium"
-  identifier          = "${local.identifier}"
-  name                = "${var.dbname}"
-  username            = "${var.user}"
-  password            = "${random_string.password.result}"
+  identifier          = local.identifier
+  name                = var.dbname
+  username            = var.user
+  password            = random_string.password.result
   multi_az            = "true"
   storage_encrypted   = "true"
   allocated_storage   = 20

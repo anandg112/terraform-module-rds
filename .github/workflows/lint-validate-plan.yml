@@ -10,7 +10,7 @@ on:
 
 jobs:
   terraform:
-    name: "Terraform infrastructruee change management"
+    name: "Terraform infrastructrue change management"
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -20,6 +20,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: 1.4.6
 
     - name: Terraform fmt
       id: fmt
