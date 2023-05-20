@@ -17,3 +17,4 @@ out.terraform
 .env
 .envrc
 
+node_modules/

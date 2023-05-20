@@ -7,17 +7,17 @@ locals {
 }
 
 variable "dbname" {
-  type = "string"
+  type = string
 }
 
 variable "user" {
-  type = "string"
+  type = string
 }
 
 variable "owner" {
-  type = "string"
+  type = string
 }
 
-variable environment {
-  type = "string"
+variable "environment" {
+  type = string
 }

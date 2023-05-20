@@ -1,0 +1,33 @@
+{
+  "name": "terraform-module-rds",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anand Gautam",
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/github": "^8.0.7",
+    "git-cz": "^4.9.0",
+    "semantic-release": "^21.0.2"
+  },
+  "config": {
+      "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github",
+    "@semantic-release/npm", {
+        "npmPublish": false
+    }
+  ],
+  "release": {
+    "branches": ["main"]
+  }
+}
